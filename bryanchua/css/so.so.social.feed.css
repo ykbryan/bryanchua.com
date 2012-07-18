@@ -1,0 +1,11 @@
+#mbp_newsfeed ul li{
+	font-size: 14px;
+	padding-left: 20px;
+	list-style: none;
+}
+#mbp_newsfeed ul li a{
+	color:#980;
+}
+#mbp_newsfeed ul li a:hover{
+	color:#000;
+}
