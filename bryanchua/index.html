@@ -390,17 +390,17 @@ ul#read_1 li, ul#read_2 li{
         <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; font-size:20px; text-transform: uppercase; z-index:50">
             <div style="font-size:40px; padding-top:10px">surfing around</div>
             <ul id='read_1'>
-				<li><a href="http://techcrunch.com/" target="_blank"><img height="20" src="http://s2.wp.com/wp-content/themes/vip/tctechcrunch2/images/favicon.ico?m=1310283185g"> Techcrunch</a></li>
-				<li><a href="http://www.engadget.com/" target="_blank"><img height="20" src="http://www.blogsmithmedia.com/www.engadget.com/media/apple-touch-icon.png"> Engadget</a></li>
-				<li><a href="http://sgentrepreneurs.com/" target="_blank"><img height="20" src="http://sgentrepreneurs.com/favicon.ico"> SG Entrepreneurs</a></li>
-				<li><a href="http://e27.sg/" target="_blank"><img height="20" src="http://e27.sg/wp-content/themes/greenisgood/img/e27-logo.png"> e27</a></li>
-				<li><a href="http://www.techinasia.com/" target="_blank"><img height="20" src="http://www.techinasia.com/techinasia/wp-content/uploads/2012/03/techinasia_favicon.png"> Tech in Asia</a></li>
+				<li><a href="http://techcrunch.com/" target="_blank"><img height="20" src="reads/techcrunch/favicon.ico"> Techcrunch</a></li>
+				<li><a href="http://www.engadget.com/" target="_blank"><img height="20" src="reads/engadget/apple-touch-icon.png"> Engadget</a></li>
+				<li><a href="http://sgentrepreneurs.com/" target="_blank"><img height="20" src="reads/sge/favicon.ico"> SG Entrepreneurs</a></li>
+				<li><a href="http://e27.sg/" target="_blank"><img height="20" src="reads/e27/e27-logo.png"> e27</a></li>
+				<li><a href="http://www.techinasia.com/" target="_blank"><img height="20" src="reads/techinasia/techinasia_favicon.png"> Tech in Asia</a></li>
 			
 			</ul>
 			<ul id='read_2'>
-				<li><a href="http://lamerhui.wordpress.com/" target="_blank"><img height="20" src="http://s2.wp.com/i/favicon.ico?m=1311976023g"> Hui's Blog</a></li>
-				<li><a href="http://lesterchan.net/" target="_blank"><img height="20" src="http://cdn.lesterchan.net/favicon.ico"> Lester Chan's Blog</a></li>
-				<li><a href="http://www.ladyironchef.com/" target="_blank"><img height="20" src="http://cdn.ladyironchef.com/wp-content/themes/elements-of-seo/images/favicon.ico"> Ladyironchef</a></li>
+				<li><a href="http://lamerhui.wordpress.com/" target="_blank"><img height="20" src="reads/lamerhui/favicon.ico"> Hui's Blog</a></li>
+				<li><a href="http://lesterchan.net/" target="_blank"><img height="20" src="reads/lesterchan/favicon.ico"> Lester Chan's Blog</a></li>
+				<li><a href="http://www.ladyironchef.com/" target="_blank"><img height="20" src="#"> Ladyironchef</a></li>
 			</ul>
         </div>
     </div>
@@ -452,7 +452,7 @@ ul#read_1 li, ul#read_2 li{
     <div style="width:620px; height:30px; background:url(images/png_tab.png) no-repeat; margin-top:450px; right:0px; position:absolute; opacity:0.7;; z-index:50"></div>
     <div class="tab">
         <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; font-size:20px; text-transform: uppercase; z-index:50; overflow:auto; height:420px;">
-            <div style="font-size:40px; padding-top:10px">things i blog</div>
+            <div style="font-size:40px; padding-top:10px">what i wrote...</div>
             <div id="blog_list">Coming soon</div>
         </div>
     </div>
@@ -487,6 +487,119 @@ ul#read_1 li, ul#read_2 li{
 </div>
 
 <script>
+$("button").button();
+$("input, select").addClass("ui-widget, ui-state-default, ui-corner-all");
+
+var num = 0, wordpress = null;
+
+$(window).load(function() {
+	alert('fired');
+	
+	$("div#loading").hide();
+	$("div#index_box").stop().animate({width: "620px"}, "slow");
+	//project_list
+
+	if(parseInt(projects.length) > 0) $("#project_list").html("");
+	for(var p = 0; p < parseInt(projects.length); p++){
+		$("#project_list").append("<img src=\""+projects[p][7]+"\" title=\""+projects[p][0]+"\" class='project' name='"+p+"'>");
+	}
+
+	if(parseInt(photography.length) > 0) $("#photography_list").html("");
+	for(var q = 0; q < parseInt(photography.length); q++){
+		$("#photography_list").append("<img src=\"photography/"+photography[q][1]+"\" title=\""+photography[q][0]+"\" class='photo' name='"+q+"'>");
+	}
+
+	if(parseInt(apps.length) > 0) $("#apps_list").html("");
+	for (var s = 0; s < parseInt(apps.length); s++){
+		$("#apps_list").append("<div class=\"apps\"><img src=\""+apps[s][3]+"\" /><p class=\"app_title\">"+apps[s][0]+"</p><p class=\"app_excerpt\">"+apps[s][1]+"</p><a href=\""+apps[s][2]+"\" target=\"_blank\">Download yours!</a></div>");
+	}
+
+	$('.project').stop().click(function(){
+		var body = document.body,
+		    html = document.documentElement;
+
+		var width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
+
+		num = parseInt($(this).attr('name'));
+		$('#project_name').html(projects[num][0]);
+		if(projects[num][6] === "screenshot"){
+			$("#project_showcase_youtube").hide();
+			$('#project_showcase_image').show().attr('src', projects[num][1]);
+		}else if(projects[num][6] === "youtube"){
+			$("#project_showcase_youtube").show().attr('src', projects[num][1]);
+			$('#project_showcase_image').hide();
+		}else{
+			$('#project_showcase_image, #project_showcase_youtube').hide();
+		}
+
+		$('#project_date').html(projects[num][2]);
+		$('#project_body').html(projects[num][3]);
+		$('#project_skills').html(projects[num][4]);
+		$('#project_link').html(projects[num][5]);
+		if(projects[num][5]){
+			$("#project_permlink").show();
+			$('#project_link').attr('href', "http://"+projects[num][5]);
+		}else
+			$('#project_permlink').hide();
+
+		thisbox.stop().show().animate({ width: width+"px"}, "slow", function(){
+			var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+			thisbox.animate({ height: height+"px" }, "slow");
+			$(".instructions").show();
+			thisbox_opened = true;
+		});;	
+	});
+
+	$('.photo').stop().click(function(){
+		var body = document.body,
+		    html = document.documentElement;
+
+		var width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
+
+		num = parseInt($(this).attr('name'));
+		$('#photography_name').html(photography[num][0]);
+		$('#photography_showcase_image').attr("src", "photography/"+photography[num][1]);
+	
+		var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+	
+		$("#photography_showcase").css('height', height+"px").stop().show().animate({ width: width+"px"}, "slow", function(){
+			$('#photography_showcase_image, #photography_name, .instructions').fadeIn();
+			thisbox_opened = true;
+		});;	
+	});
+
+	$(".project, .photo").hover(function(){
+		$(this).animate({ opacity: "0.6"}, "slow");
+	}, function(){
+		$(this).animate({ opacity: "1"}, "slow");
+	});
+
+	var feeds = [
+		"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=tobryanchua",
+		"http://github.com/ykbryan.atom"
+	];
+
+	$("#mbp_newsfeed").soSoSocial({
+		feeds : feeds,
+		limit : 25
+	});
+	
+	$.ajax({
+		type: 'POST',
+		url: 'wordpress/',
+		data: 'json=get_recent_posts',
+		dataType: 'json',
+		success: function(data){
+			wordpress = data;
+			$("#blog_list").html("");
+			for(var x=0; x<data.count; x++){
+				$("#blog_list").append("<p countid=\""+x+"\">- " + data.posts[x]['title'] + "</p>");
+			}
+		},error: function(data){
+			alert("Oops! an error has occurred. please try again later...");
+		}
+	});
+});
 
 $("div#area_social").click(function(){
 	$("div#area_keyboard, div#area_desktop").removeClass("pushed");
@@ -652,102 +765,6 @@ $("button#contact_send").click(function(){
 				});
 			}
 		}
-	});
-});
-
-$("button").button();
-$("input, select").addClass("ui-widget, ui-state-default, ui-corner-all");
-
-var num = 0;
-
-$(window).load(function() {
-	$("div#loading").hide();
-	$("div#index_box").stop().animate({width: "620px"}, "slow");
-	//project_list
-	
-	if(parseInt(projects.length) > 0) $("#project_list").html("");
-	for(var p = 0; p < parseInt(projects.length); p++){
-		$("#project_list").append("<img src=\""+projects[p][7]+"\" title=\""+projects[p][0]+"\" class='project' name='"+p+"'>");
-	}
-
-	if(parseInt(photography.length) > 0) $("#photography_list").html("");
-	for(var q = 0; q < parseInt(photography.length); q++){
-		$("#photography_list").append("<img src=\"photography/"+photography[q][1]+"\" title=\""+photography[q][0]+"\" class='photo' name='"+q+"'>");
-	}
-	
-	if(parseInt(apps.length) > 0) $("#apps_list").html("");
-	for (var s = 0; s < parseInt(apps.length); s++){
-		$("#apps_list").append("<div class=\"apps\"><img src=\""+apps[s][3]+"\" /><p class=\"app_title\">"+apps[s][0]+"</p><p class=\"app_excerpt\">"+apps[s][1]+"</p><a href=\""+apps[s][2]+"\" target=\"_blank\">Download yours!</a></div>");
-	}
-	
-	$('.project').stop().click(function(){
-		var body = document.body,
-		    html = document.documentElement;
-
-		var width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
-
-		num = parseInt($(this).attr('name'));
-		$('#project_name').html(projects[num][0]);
-		if(projects[num][6] === "screenshot"){
-			$("#project_showcase_youtube").hide();
-			$('#project_showcase_image').show().attr('src', projects[num][1]);
-		}else if(projects[num][6] === "youtube"){
-			$("#project_showcase_youtube").show().attr('src', projects[num][1]);
-			$('#project_showcase_image').hide();
-		}else{
-			$('#project_showcase_image, #project_showcase_youtube').hide();
-		}
-
-		$('#project_date').html(projects[num][2]);
-		$('#project_body').html(projects[num][3]);
-		$('#project_skills').html(projects[num][4]);
-		$('#project_link').html(projects[num][5]);
-		if(projects[num][5]){
-			$("#project_permlink").show();
-			$('#project_link').attr('href', "http://"+projects[num][5]);
-		}else
-			$('#project_permlink').hide();
-
-		thisbox.stop().show().animate({ width: width+"px"}, "slow", function(){
-			var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-			thisbox.animate({ height: height+"px" }, "slow");
-			$(".instructions").show();
-			thisbox_opened = true;
-		});;	
-	});
-	
-	$('.photo').stop().click(function(){
-		var body = document.body,
-		    html = document.documentElement;
-
-		var width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
-
-		num = parseInt($(this).attr('name'));
-		$('#photography_name').html(photography[num][0]);
-		$('#photography_showcase_image').attr("src", "photography/"+photography[num][1]);
-		
-		var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-		
-		$("#photography_showcase").css('height', height+"px").stop().show().animate({ width: width+"px"}, "slow", function(){
-			$('#photography_showcase_image, #photography_name, .instructions').fadeIn();
-			thisbox_opened = true;
-		});;	
-	});
-
-	$(".project, .photo").hover(function(){
-		$(this).animate({ opacity: "0.6"}, "slow");
-	}, function(){
-		$(this).animate({ opacity: "1"}, "slow");
-	});
-	
-	var feeds = [
-		"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=tobryanchua",
-		"http://github.com/ykbryan.atom"
-	];
-	
-	$("#mbp_newsfeed").soSoSocial({
-		feeds : feeds,
-		limit : 25
 	});
 });
 
