@@ -696,6 +696,18 @@ function reset(){
 	$("div#area_chair").css("left", "260px");
 	$("div#area_social").css("width", "125px").css("height", "30px").css("top", "590px").css("left", "0px").removeClass("pushed");
 }
+
+function loadFeeds(){
+	var feeds = [
+		"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=tobryanchua",
+		"http://github.com/ykbryan.atom"
+	];
+
+	$("#mbp_newsfeed").soSoSocial({
+		feeds : feeds,
+		limit : 25
+	});
+}
 /*
 var body = document.body,
     html = document.documentElement;
@@ -894,16 +906,8 @@ $(window).load(function(){
 	}, function(){
 		$(this).animate({ opacity: "1"}, "slow");
 	});
-
-	var feeds = [
-		"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=tobryanchua",
-		"http://github.com/ykbryan.atom"
-	];
-
-	$("#mbp_newsfeed").soSoSocial({
-		feeds : feeds,
-		limit : 25
-	});
+	
+	loadFeeds();
 	
 	$.ajax({
 		type: 'POST',

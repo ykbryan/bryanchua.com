@@ -133,7 +133,10 @@
 	Plugin.prototype.print = function() {
 		
 		if (obj.contentArray.length < obj.options.limit) {
-			alert('Sorry but you have set a limit (' + obj.options.limit + ') but didn\'t return that many items in your RSS feed.');
+			//alert('Sorry but you have set a limit (' + obj.options.limit + ') but didn\'t return that many items in your RSS feed.');
+			setTimeout(function(){
+				loadFeeds();
+			},3000);
 			return false;
 		}
 		
