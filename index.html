@@ -47,6 +47,7 @@
 	position:fixed;
 	bottom:0px;
 	background:url(images/bg_wall_top.gif) repeat-x;
+	min-width:600px;
 	width:100%;
 	z-index:50;
 }
@@ -182,7 +183,8 @@ ul#read_1 li, ul#read_2 li{
 	float:right;
 }
 .instructions{
-	padding-top:20px; 
+	padding-top:20px;
+	padding-bottom:20px; 
 	font-size:20px;
 	display:none;
 }
@@ -224,14 +226,30 @@ ul#read_1 li, ul#read_2 li{
 	color:#000;
 }
 #blog_entry_title {
-	font-size:16px;
+	font-size:22px;
+	padding-top:10px;
+	font-weight:bold;
+	text-transform:uppercase;
 }
-#blog_entry_content{
+.blog_entries{
+	padding-left:25px;
+	background: url(reads/wordpress.png) no-repeat top left;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top:3px;
+}
+.blog_entries, #blog_entry_content{
 	font-size:14px;
 }
 #blog_entry_content p {
 	margin-top:10px;
 	margin-bottom:10px;
+}
+#blog_entry_content ul{
+	list-style-type: disc;
+}
+#blog_entry_content li{
+	margin-left: 30px;
 }
 </style>
 </head>
@@ -349,8 +367,8 @@ ul#read_1 li, ul#read_2 li{
     <div class="tab_bg"></div>
     <div style="width:620px; height:30px; background:url(images/png_tab.png) no-repeat; margin-top:450px; right:0px; position:absolute; opacity:0.7;; z-index:50"></div>
     <div class="tab">
-        <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; font-size:20px; text-transform: uppercase; z-index:55; overflow:auto; height:420px;">
-            <div style="font-size:40px; padding-top:10px">what am I doing...</div>
+        <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; font-size:20px; z-index:55; overflow:auto; height:420px;">
+            <div style="font-size:40px; padding-top:10px">WHAT AM I DOING...</div>
             <div id="mbp_newsfeed">Loading...</div>
            
         </div>
@@ -361,7 +379,7 @@ ul#read_1 li, ul#read_2 li{
     <div class="tab_bg"></div>
     <div style="width:620px; height:30px; background:url(images/png_tab.png) no-repeat; margin-top:450px; right:0px; position:absolute; opacity:0.7;; z-index:50"></div>
     <div class="tab">
-        <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; font-size:20px; text-transform: uppercase; z-index:55">
+        <div style="z-index:55">
             <img src="images/skills.png">
         </div>
     </div>
@@ -472,7 +490,7 @@ ul#read_1 li, ul#read_2 li{
     <div style="width:620px; height:30px; background:url(images/png_tab.png) no-repeat; margin-top:450px; right:0px; position:absolute; opacity:0.7;; z-index:50"></div>
     <div class="tab">
         <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; z-index:55; overflow:auto; height:420px;">
-            <div style="font-size:30px; padding-top:10px" id="blog_entry_title">Title</div>
+            <div id="blog_entry_title">Title</div>
             <div id="blog_entry_content">Content</div>
         </div>
     </div>
@@ -756,7 +774,7 @@ $(document).keyup(function(e){
 		else num = default_num - 1;
 		
 		$('#photography_name').html(photography[num][0]);
-		$('#photography_showcase_image').attr("src", "photography/"+photography[num][1]);
+		$('#photography_showcase_image').attr("src", "photography/"+photography[num][1]+".jpg");
 	}else if(e.keyCode == 39){
 		//right key
 		var default_num = num;
@@ -791,7 +809,7 @@ $(document).keyup(function(e){
 		else num = default_num + 1;
 		
 		$('#photography_name').html(photography[num][0]);
-		$('#photography_showcase_image').attr("src", "photography/"+photography[num][1]);
+		$('#photography_showcase_image').attr("src", "photography/"+photography[num][1]+".jpg");
 	}
 });
 
@@ -805,8 +823,9 @@ $('img#close_project').click(function(){
 });
 
 $('img#close_photography').click(function(){
-	$("#photography_name, #photography_showcase_image, .instructions").stop().fadeOut(function(){
-		$('div#photography_showcase').animate({ width: "0"}, "slow", function(){
+	$("span#photography_name, .instructions").hide();
+	$("img#photography_showcase_image").stop().fadeOut(function(){
+		$('div#photography_showcase').stop().animate({ width: "0"}, "slow", function(){
 			$(this).hide();
 		});
 		thisbox_opened = false;
@@ -839,7 +858,7 @@ $(window).load(function(){
 
 	if(parseInt(photography.length) > 0) $("#photography_list").html("");
 	for(var q = 0; q < parseInt(photography.length); q++){
-		$("#photography_list").append("<img src=\"photography/"+photography[q][1]+"\" title=\""+photography[q][0]+"\" class='photo' name='"+q+"'>");
+		$("#photography_list").append("<img src=\"photography/"+photography[q][1]+"_thumb.jpg\" title=\""+photography[q][0]+"\" class='photo' name='"+q+"'>");
 	}
 
 	if(parseInt(apps.length) > 0) $("#apps_list").html("");
@@ -891,12 +910,13 @@ $(window).load(function(){
 
 		num = parseInt($(this).attr('name'));
 		$('#photography_name').html(photography[num][0]);
-		$('#photography_showcase_image').attr("src", "photography/"+photography[num][1]);
+		$('#photography_showcase_image').attr("src", "photography/"+photography[num][1]+".jpg");
 	
 		var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 	
 		$("#photography_showcase").css('height', height+"px").stop().show().animate({ width: width+"px"}, "slow", function(){
-			$('#photography_showcase_image, #photography_name, .instructions').fadeIn();
+			$("span#photography_name, .instructions").show();
+			$('img#photography_showcase_image').fadeIn();
 			thisbox_opened = true;
 		});;	
 	});
@@ -918,7 +938,7 @@ $(window).load(function(){
 			wordpress = data;
 			$("#blog_list").html("");
 			for(var x=0; x<data.count; x++){
-				$("#blog_list").append("<p class=\"blog_entries clickable\" countid=\""+x+"\">- " + data.posts[x]['title'] + "</p>");
+				$("#blog_list").append("<p class=\"blog_entries clickable\" countid=\""+x+"\">" + data.posts[x]['title'] + "</p>");
 				
 				$(".blog_entries").click(function(){
 					var countid = $(this).attr("countid");
@@ -928,11 +948,11 @@ $(window).load(function(){
 					
 					$("div#blog_entry a").attr("src","_blank");
 					$("div#blog_entry").stop().animate({width: "620px"}, "slow");
-					$("div#blog_entry_content").append("<p class=\"clickable\" id=\"blog_back\" style=\"margin-top:40px\"><< Back to list</p>");
+					$("div#blog_entry_content").append("<div class=\"clickable\" id=\"blog_back\" style=\"margin-top:40px; width:100%\"><< Back to list</p>");
 					
 				});
 				
-				$("p#blog_back").live('click', function(){
+				$("div#blog_back").live('click', function(){
 					reset();
 					$("div#blog").stop().animate({width: "620px"}, "slow");
 				});
