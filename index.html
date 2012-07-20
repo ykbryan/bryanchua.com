@@ -49,7 +49,7 @@
 	background:url(images/bg_wall_top.gif) repeat-x;
 	min-width:600px;
 	width:100%;
-	z-index:50;
+	z-index:51;
 }
 #menu span{
 	padding:15px;
@@ -492,6 +492,7 @@ ul#read_1 li, ul#read_2 li{
         <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; z-index:55; overflow:auto; height:420px;">
             <div id="blog_entry_title">Title</div>
             <div id="blog_entry_content">Content</div>
+			<div class="clickable" id="blog_back" style="margin-top:40px; width:100%; padding-bottom:20px"><< Back to list</p>
         </div>
     </div>
 </div>
@@ -929,6 +930,11 @@ $(window).load(function(){
 	
 	loadFeeds();
 	
+	$("div#blog_back").click(function(){
+		reset();
+		$("div#blog").stop().animate({width: "620px"}, "slow");
+	});
+	
 	$.ajax({
 		type: 'POST',
 		url: 'wordpress/',
@@ -944,17 +950,11 @@ $(window).load(function(){
 					var countid = $(this).attr("countid");
 					reset();
 					$("div#blog_entry_title").html(wordpress.posts[countid]['title']);
-					$("div#blog_entry_content").html(wordpress.posts[countid]['content']);
+					$("div#blog_entry_content").html("").html(wordpress.posts[countid]['content']);
 					
 					$("div#blog_entry a").attr("src","_blank");
 					$("div#blog_entry").stop().animate({width: "620px"}, "slow");
-					$("div#blog_entry_content").append("<div class=\"clickable\" id=\"blog_back\" style=\"margin-top:40px; width:100%\"><< Back to list</p>");
 					
-				});
-				
-				$("div#blog_back").live('click', function(){
-					reset();
-					$("div#blog").stop().animate({width: "620px"}, "slow");
 				});
 				
 			}
