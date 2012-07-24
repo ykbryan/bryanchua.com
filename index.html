@@ -251,6 +251,12 @@ ul#read_1 li, ul#read_2 li{
 #blog_entry_content li{
 	margin-left: 30px;
 }
+.blog_excerpt{
+	font-size:12px;
+}
+.blog_excerpt a{
+	display:none;
+}
 </style>
 </head>
 
@@ -352,13 +358,10 @@ ul#read_1 li, ul#read_2 li{
     <div class="tab_bg"></div>
     <div style="width:620px; height:30px; background:url(images/png_tab.png) no-repeat; margin-top:450px; right:0px; position:absolute; opacity:0.7;; z-index:50"></div>
     <div class="tab">
-        <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; font-size:40px; text-transform: uppercase; z-index:55">
-            <p style="padding-top:10px">development studio</p>
-			<p style="padding-top:10px; font-size:24px">Feel free to "move" them around</p>
-			<p style="font-size:16px">(just remember to put them back before u leave)</p>
-			<p style="padding-top:60px; font-size:25px">Arranging elements in such a way</p>
-			<p style="font-size:25px">as best to accomplish</p>
-			<p style="font-size:25px">a particular purpose.</p>
+        <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; text-transform: uppercase; z-index:55; padding-left:60px">
+            <p style="padding-top:140px; font-size:26px">the happiest people don't have the</p>
+			<p style="padding-top:0px; font-size:48px">best of everything</p>
+			<p style="font-size:16px; letter-spacing:4px">they just made the best of everything</p>
         </div>
     </div>
 </div>
@@ -478,7 +481,7 @@ ul#read_1 li, ul#read_2 li{
     <div style="width:620px; height:30px; background:url(images/png_tab.png) no-repeat; margin-top:450px; right:0px; position:absolute; opacity:0.7;; z-index:50"></div>
     <div class="tab">
         <div style="font-family: 'CaviarDreamsRegular', sans-serif; font-weight: lighter; font-size:20px; z-index:55; overflow:auto; height:420px;">
-            <div style="font-size:40px; padding-top:10px">UNDER CONSTRUCTION...</div>
+            <div style="font-size:40px; padding-top:10px">ARCHIVES</div>
             <div id="blog_list">Coming soon...</div>
         </div>
     </div>
@@ -944,13 +947,15 @@ $(window).load(function(){
 			wordpress = data;
 			$("#blog_list").html("");
 			for(var x=0; x<data.count; x++){
-				$("#blog_list").append("<p class=\"blog_entries clickable\" countid=\""+x+"\">" + data.posts[x]['title'] + "</p>");
+				$("#blog_list").append("<p class=\"blog_entries clickable\" countid=\""+x+"\"><strong>" + data.posts[x]['title'] + "</strong><br /><span class=\"blog_excerpt\">"+data.posts[x]['excerpt']+"</span></p>");
 				
 				$(".blog_entries").click(function(){
 					var countid = $(this).attr("countid");
 					reset();
 					$("div#blog_entry_title").html(wordpress.posts[countid]['title']);
-					$("div#blog_entry_content").html("").html(wordpress.posts[countid]['content']);
+					$("div#blog_entry_content").hide().fadeIn(function(){
+						$(this).html(wordpress.posts[countid]['content']);
+					});
 					
 					$("div#blog_entry a").attr("src","_blank");
 					$("div#blog_entry").stop().animate({width: "620px"}, "slow");
