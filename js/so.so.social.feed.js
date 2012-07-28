@@ -163,7 +163,8 @@
 		if (values[5] == "+0000") {
 			delta = delta + (relative_to.getTimezoneOffset() * 60);
 		} else {
-			delta = delta + relative_to.getTimezoneOffset();
+			//delta = delta + relative_to.getTimezoneOffset();
+			delta = delta + (relative_to.getTimezoneOffset() * 60);
 		}
 
 
