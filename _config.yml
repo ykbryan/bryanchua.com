@@ -1,0 +1,21 @@
+# Site settings
+title: Bryan Chua | AWS Solutions Architect, Co-founder ex-CTO ShopBack & Entrepreneur
+description: A blog about lorem ipsum dolor sit amet
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Bryan Chua
+user_description: Engineering is a continuous challenge and there is no one-time solution. Bryan Chua has probably wrote more than a few million lines of code and is excited to build great products with a talented team & people.
+user_title: Technology. Engineering. Photography.
+email: me@bryanchua.com
+twitter_username: mebryanchua
+github_username:  ykbryan
+gplus_username:  lorem_ipsum
+linkedin_username:  lorem_ipsum
+
+# Google-analytics
+google-analytics:
+  id: "UA-20790316-2"
+
+exclude: ['package.json', 'src' , 'node_modules']
