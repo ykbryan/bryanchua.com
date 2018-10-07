@@ -1,21 +1,42 @@
-#projects {
+#blog {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 90%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  overflow: hidden;
   @media only screen and (min-width: $cut) {
     width: 80%;
   }
 
+  .imgcontainer{
+    img{
+      width: 100%;
+      @media only screen and (min-width: $cut) {
+        width: auto;
+        border:1px solid #eee;
+        padding: 0.2rem;
+        margin: 0.3rem;
+        border-radius: 0;
 
-  .user-projects {
+      }
+    } 
+  }
+
+  .label-tag{
+    font-size: 0.5rem;
+    background-color: #002e62;
+    padding: 4px;
+    margin: 1px;
+    color: #fff;
+    border-radius: 0.2rem;
+  }
+  .user-blog {
     margin: 20px auto;
     img {
       max-width: 100%;
       height: auto;
-      border-radius: 5px;
     }
     h5 {
       margin: 0;
@@ -32,7 +53,7 @@
   .contents {
     @media only screen and (min-width: $cut) {
       margin-left: 0;
-      width: 48%;
+      width: 100%;
     }
   }
 
@@ -40,17 +61,25 @@
     @media only screen and (min-width: $cut) {
       float: right;
       margin-top: -5%;
-      width: 48%;
+      width: 73%;
+    }
+  }
+  .images {
+    text-align: center;
+    img {
+      width: auto;
+      max-width: 100%;
+      margin: 0 auto;
     }
   }
   .images-right {
     @media only screen and (min-width: $cut) {
       float: right;
-      width: 48%;
+      width: 23%;
     }
     img {
       @media only screen and (min-width: $cut) {
-        float: right;
+        float: right; 
       }
     }
   }
@@ -58,7 +87,7 @@
   .images-left {
     @media only screen and (min-width: $cut) {
       float: left;
-      width: 48%;
+      width: 23%;
     }
     img {
       @media only screen and (min-width: $cut) {
@@ -67,7 +96,7 @@
     }
   }
 
-  .project-link {
+  .blog-link {
     display: block;
     width: 100px;
     margin: 10px 0px;
@@ -100,5 +129,4 @@
                   border-color 0.3s ease-in;
     }
   }
-
 }
