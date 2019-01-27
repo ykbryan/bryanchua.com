@@ -40,6 +40,12 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 - Run `npm install`
 - Run `gulp`
 
+## If Gulp is not working for you, try the following command:
+
+```
+node ./node_modules/gulp/bin/gulp.js
+```
+
 ## Questions
 
 Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/issues/new).
