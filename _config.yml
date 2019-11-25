@@ -2,7 +2,7 @@
 title: Bryan Chua | AWS Solutions Architect, Co-founder ex-CTO ShopBack & Entrepreneur
 description: A blog about lorem ipsum dolor sit amet
 # baseurl: "https://bryanchua.com" # the subpath of your site, e.g. /blog
-url: "https://bryanchua.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: 'https://bryanchua.com' # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Bryan Chua
@@ -11,15 +11,16 @@ user_title: Technology. Engineering. Photography.
 email: me@bryanchua.com
 facebook_username: ykbryan
 twitter_username: mebryanchua
-github_username:  ykbryan
-gplus_username:  lorem_ipsum
-linkedin_username:  ykbryan
+github_username: ykbryan
+gplus_username: lorem_ipsum
+linkedin_username: ykbryan
 instagram_username: ykbryan
 photography_website: bryanchua.photography
 blog_website: bryanchua.io
 
 # Google-analytics
 google-analytics:
-  id: "UA-20790316-2"
+  id: 'UA-20790316-2'
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src', 'node_modules']
+permalink: /:title/
