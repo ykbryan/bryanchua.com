@@ -1,7 +1,7 @@
 ---
 layout: blog
 tags: machine-learning python numpy scikit-learn
-categories: engineering
+categories: engineering testing
 date: 2014-12-30 13:06
 thumbnail: http://placehold.it/1000x1000
 title: A Demo blog
