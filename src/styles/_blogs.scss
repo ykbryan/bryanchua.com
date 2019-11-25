@@ -10,27 +10,28 @@
     width: 80%;
   }
 
-  .imgcontainer{
-    img{
+  .imgcontainer {
+    img {
       width: 100%;
       @media only screen and (min-width: $cut) {
         width: auto;
-        border:1px solid #eee;
+        border: 1px solid #eee;
         padding: 0.2rem;
         margin: 0.3rem;
         border-radius: 0;
-
       }
-    } 
+    }
   }
 
-  .label-tag{
+  .label-tag {
     font-size: 0.5rem;
     background-color: #002e62;
     padding: 4px;
     margin: 1px;
-    color: #fff;
     border-radius: 0.2rem;
+    a {
+      color: #fff;
+    }
   }
   .user-blog {
     margin: 20px auto;
@@ -79,7 +80,7 @@
     }
     img {
       @media only screen and (min-width: $cut) {
-        float: right; 
+        float: right;
       }
     }
   }
@@ -109,24 +110,21 @@
     outline: none;
     text-decoration: none;
     cursor: pointer;
-    transition: color 0.3s ease-out,
-                background-color 0.3s ease-out,
-                border-color 0.3s ease-out;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out,
+      border-color 0.3s ease-out;
     &:hover {
       background-color: $purple;
       border-color: $purple;
       color: #fff;
-      transition: color 0.3s ease-in,
-                  background-color 0.3s ease-in,
-                  border-color 0.3s ease-in;
+      transition: color 0.3s ease-in, background-color 0.3s ease-in,
+        border-color 0.3s ease-in;
     }
     &:active {
       background-color: $purple;
       border-color: $purple;
       color: #fff;
-      transition: color 0.3s ease-in,
-                  background-color 0.3s ease-in,
-                  border-color 0.3s ease-in;
+      transition: color 0.3s ease-in, background-color 0.3s ease-in,
+        border-color 0.3s ease-in;
     }
   }
 }
