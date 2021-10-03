@@ -104,6 +104,12 @@ This allows for easier installation and updating as you don't have to manage any
    theme: minimal-mistakes-jekyll
    ```
 
+4. Serve locally:
+
+   ```bash
+   bundle exec jekyll serve --incremental
+   ```
+
 To update the theme run `bundle update`.
 
 ### Remote theme method
