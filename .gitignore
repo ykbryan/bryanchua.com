@@ -1,5 +1,11 @@
-_site
-.sass-cache
-.jekyll-metadata
+*.gem
+*.css
+*.css.map
+.bundle
 .jekyll-cache
-yarn.lock
+.jektex-cache
+.jekyll-metadata
+.sass-cache
+_site
+vendor
+Gemfile.lock
