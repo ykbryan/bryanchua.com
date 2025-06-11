@@ -12,7 +12,7 @@ tags:
  - Technical Paper
 ---
 
-I’m on holiday currently for a few days, taking a break and taking this opportunity to delve deeper into DeepSeek-AI’s technical papers, specifically the [DeepSeek-V3 technical paper](https://arxiv.org/pdf/2412.19437) and [DeepSeep-V2 technical paper](https://arxiv.org/pdf/2405.04434). In this blog, I’ll share my thoughts, what I learned, and the technical aspects I found most interesting. I put the headings below to assess DeepSeek’s core advancements, evaluate its advanced & reasoning-focused model, and explore what these developments mean for AI strategies and startup opportunities.
+I’m on holiday currently for a few days, taking a break and this opportunity to delve deeper into DeepSeek-AI’s technical papers, specifically the [DeepSeek-V3 technical paper](https://arxiv.org/pdf/2412.19437) and [DeepSeep-V2 technical paper](https://arxiv.org/pdf/2405.04434). In this blog, I’ll share my thoughts, what I learned, and the technical aspects I found most interesting. I put the headings below to assess DeepSeek’s core advancements, evaluate its advanced & reasoning-focused model, and explore what these developments mean for AI strategies and startup opportunities.
 
 > DeepSeek is a Chinese artificial intelligence (AI) company that develops and releases open-source large language models (LLMs). Founded in 2023 by [Liang Wenfeng](https://en.wikipedia.org/wiki/Liang_Wenfeng), DeepSeek's AI chatbot, DeepSeek-R1, gained significant attention for [its performance and cost-effectiveness](https://economictimes.indiatimes.com/magazines/panache/deepseek-or-chatgpt-a-price-to-performance-comparison-what-you-need-to-know/articleshow/117636306.cms) compared to competitors like OpenAI's ChatGPT. 
 
