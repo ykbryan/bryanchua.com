@@ -23,6 +23,9 @@ But here is the hard truth: text loses context. A transcript strips away the sig
 
 ## Rate of Change: Gemini Embedding 2
 
+![Before and After Translator](/assets/images/before-and-after-diagram.jpg)
+Picture 2 - Before and After: Translating images to text vs Omni-Modal Embeddings
+
 The release of Google's Gemini Embedding 2 in March 2026 resets this entirely. It is a natively multimodal model. It maps text, video, audio, and images into a single mathematical vector space. 
 
 * It listens natively. No transcription needed. It understands tone.
