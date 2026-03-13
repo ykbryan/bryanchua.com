@@ -46,4 +46,4 @@ Unlike the open-source transparency we saw from players like DeepSeek over the l
 
 For enterprises, this means committing to the Google Cloud infrastructure to leverage this specific architectural advantage. But for organizations already operating at scale, the reduction in pipeline friction and latency is often well worth the admission price.
 
-If you are exploring how to modernize your data pipelines and move beyond the transcription middleman, my team at GoPomelo—a Google Cloud Premier Partner—is actively helping organizations map out these new architectures. Feel free to reach out if you want to see what this looks like in practice.
+If you are exploring how to modernize your data pipelines and move beyond the transcription middleman, my team at [GoPomelo](https://www.gopomelo.com)—a Google Cloud Premier Partner—is actively helping organizations map out these new architectures. Feel free to reach out if you want to see what this looks like in practice.
