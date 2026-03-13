@@ -14,6 +14,9 @@ A technology leader's reflection on the recent shift in AI architecture—moving
 
 ## The High Cost of the "Frankenstein" Pipeline
 
+![The Frankenstein Pipeline](/assets/images/frankenstein-pipeline.jpg)
+Picture 1 - The High Cost of the "Frankenstein" Pipeline
+
 If you look at how we've built enterprise RAG (Retrieval-Augmented Generation) applications up until this month, the architecture was a mess. If an engineering team wanted to search a library of Zoom recordings or PDFs, they built a Frankenstein pipeline: an OCR microservice for documents, a Speech-to-Text model like Whisper for audio, and Image Captioning for photos. We did all this just to force messy, real-world data into a text embedding model.
 
 But here is the hard truth: text loses context. A transcript strips away the sigh of frustration in an audio clip. A caption loses the trendline on a chart. We were trading nuance for keyword search. When optimizing for "Time to Solve Problems," adding three middleman models before you even query your database is a losing battle.
