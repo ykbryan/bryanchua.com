@@ -126,6 +126,9 @@ I understand why people like Peter Steinberger prefer it too. Some tools just ma
 
 If Codex is the builder, Claude Code is the thoughtful systems engineer.
 
+![Claude Pro Receipt](/assets/images/claude-pro-receipt.jpg)
+Picture 3 - Putting my money where my mouth is with Claude Pro to test Claude Code
+
 Claude Code feels strongest when the task is not “build this now,” but rather:
 
 - understand this codebase
