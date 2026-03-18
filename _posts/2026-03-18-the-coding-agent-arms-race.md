@@ -43,9 +43,6 @@ And as with every platform shift, the market is quickly filling up with overlapp
 
 It hasn’t.
 
-![Coding Agents Landscape](/assets/images/coding-agents-landscape.jpg)
-Picture 1 - The new terminal-native coding agent landscape
-
 ## The wrong question
 
 The wrong question is: **which coding agent is best?**
@@ -71,7 +68,7 @@ Let me start with my bias.
 I still personally prefer Codex.
 
 ![Codex Usage Dashboard](/assets/images/codex-usage-limit.jpg)
-Picture 2 - Hitting my weekly usage limit on OpenAI Codex
+Picture 1 - Hitting my weekly usage limit on OpenAI Codex
 
 
 Not because I think it is objectively the best at everything. It isn’t.
@@ -127,7 +124,7 @@ I understand why people like Peter Steinberger prefer it too. Some tools just ma
 If Codex is the builder, Claude Code is the thoughtful systems engineer.
 
 ![Claude Pro Receipt](/assets/images/claude-pro-receipt.jpg)
-Picture 3 - Putting my money where my mouth is with Claude Pro to test Claude Code
+Picture 2 - Putting my money where my mouth is with Claude Pro to test Claude Code
 
 Claude Code feels strongest when the task is not “build this now,” but rather:
 
