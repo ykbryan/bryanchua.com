@@ -10,9 +10,8 @@ tags:
  - Startups
  - Productivity
 ---
+I used to be a startup CTO, and I still evaluate developer tools through one lens: do they reduce friction and help teams move? Here’s my practical take on Codex, Claude Code, Gemini CLI, Gemini Code Assist, and Jules—and why I still personally prefer Codex.
 
-![Coding Agents Landscape](/assets/images/coding-agents-landscape.jpg)
-Picture 1 - The new terminal-native coding agent landscape
 
 I used to be a startup CTO.
 
@@ -43,6 +42,9 @@ Because now every serious model company wants to become your coding interface.
 And as with every platform shift, the market is quickly filling up with overlapping claims, half-true narratives, and too many people pretending one tool has already won.
 
 It hasn’t.
+
+![Coding Agents Landscape](/assets/images/coding-agents-landscape.jpg)
+Picture 1 - The new terminal-native coding agent landscape
 
 ## The wrong question
 
