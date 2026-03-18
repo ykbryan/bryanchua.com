@@ -1,15 +1,14 @@
 ---
-title: The Engineering Behind DeepSeek
-description: In early 2025, DeekSeep took the AI world by storm. Here are the brains behind DeekSeep - DeepSeek-AI published its DeepSeek-V3 technical report in late 2024, unveiling a 671 billion parameter mixture-of-experts (MoE) model that activates just 37 billion parameters per token to strike a balance between scale and inference efficiency. Whereas many leading AI labs like OpenAI maintain closed-weight models and release limited technical disclosures, DeepSeek chose transparency, publishing full architecture details and open-source weights to foster community-driven innovation. This openness contrasts with OpenAI’s strategy, which restricts detailed insights into training pipelines and proprietary optimizations, leaving external researchers to reverse-engineer performance gains. By positioning DeepSeek-V3 as a general-purpose foundation model akin to OpenAI’s GPT-4 series, DeepSeek laid the groundwork for downstream specialization, notably through the DeekSeek-R1 reasoning branch.
+title: "Decoding DeepSeek: The Engineering Behind V3, R1, and Open-Source AI"
+description: "A CTO's deep dive into the engineering behind DeepSeek-V3 and R1. Exploring MoE, FP8 training, MLA, and how open-source AI is democratizing the market."
 categories:
  - Tech
 tags:
- - Decoding
- - Engineering
- - Large Language Model
- - DeepSeek
- - Open-source
- - Technical Paper
+ - DeepSeek-V3
+ - DeepSeek-R1
+ - AI Architecture
+ - LLMs
+ - Open Source AI
 ---
 
 I’m on holiday currently for a few days, taking a break and this opportunity to delve deeper into DeepSeek-AI’s technical papers, specifically the [DeepSeek-V3 technical paper](https://arxiv.org/pdf/2412.19437) and [DeepSeep-V2 technical paper](https://arxiv.org/pdf/2405.04434). In this blog, I’ll share my thoughts, what I learned, and the technical aspects I found most interesting. I put the headings below to assess DeepSeek’s core advancements, evaluate its advanced & reasoning-focused model, and explore what these developments mean for AI strategies and startup opportunities.
@@ -117,7 +116,7 @@ DeepSeek’s claim of $5.5 million total training cost for V3 (and downstream R1
 
 ### Hype Factors Beyond Pure Algorithms
 
-While DeekSeek-R1’s algorithmic breakthroughs were noteworthy, a significant portion of its hype stemmed from the fact that the model and its associated papers (e.g., “DeepSeekMath” from February 2024) were readily downloadable, and its app was free to use without restrictions. By contrast, OpenAI’s o1 and o3-mini are accessible only via API, with usage fees that constrain large-scale experimentation. DeepSeek’s zero-cost barrier attracted a broad user base almost overnight, amplifying media coverage and discussions about potential shifts in global AI power balances.
+While DeepSeek-R1’s algorithmic breakthroughs were noteworthy, a significant portion of its hype stemmed from the fact that the model and its associated papers (e.g., “DeepSeekMath” from February 2024) were readily downloadable, and its app was free to use without restrictions. By contrast, OpenAI’s o1 and o3-mini are accessible only via API, with usage fees that constrain large-scale experimentation. DeepSeek’s zero-cost barrier attracted a broad user base almost overnight, amplifying media coverage and discussions about potential shifts in global AI power balances.
 
 ## Implications for AI Landscape and Startups
 
