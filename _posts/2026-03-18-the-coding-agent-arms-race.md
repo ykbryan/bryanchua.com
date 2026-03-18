@@ -68,7 +68,7 @@ Let me start with my bias.
 I still personally prefer Codex.
 
 ![Codex Usage Dashboard](/assets/images/codex-usage-limit.jpg)
-Picture 1 - Hitting my weekly usage limit on OpenAI Codex
+Picture 1 - Even on the ChatGPT Business Plan, I'm hitting my weekly Codex usage limit.
 
 
 Not because I think it is objectively the best at everything. It isn’t.
