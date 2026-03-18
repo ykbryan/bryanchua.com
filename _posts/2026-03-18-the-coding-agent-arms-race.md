@@ -11,6 +11,11 @@ tags:
  - Productivity
 ---
 
+# The Coding Agent Arms Race: Which AI Actually Belongs in Your Terminal?
+
+![Coding Agents Landscape](/assets/images/coding-agents-landscape.jpg)
+Picture 1 - The new terminal-native coding agent landscape
+
 I used to be a startup CTO.
 
 That means I still look at tools the same way I did back then: not as demos, not as benchmark winners, and definitely not as toys for tech Twitter.
@@ -64,6 +69,10 @@ But it is still useful.
 Let me start with my bias.
 
 I still personally prefer Codex.
+
+![Codex Usage Dashboard](/assets/images/codex-usage-limit.jpg)
+Picture 2 - Hitting my weekly usage limit on OpenAI Codex
+
 
 Not because I think it is objectively the best at everything. It isn’t.
 
