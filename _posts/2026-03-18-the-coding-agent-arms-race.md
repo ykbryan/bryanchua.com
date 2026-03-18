@@ -158,6 +158,9 @@ If your environment is mature, complex, or high-risk, Claude Code may be the saf
 
 ## Gemini: broad context, big ecosystem, less clean mental model
 
+![Gemini API Usage Dashboard](/assets/images/gemini-api-usage.jpg)
+Picture 3 - Tracking heavy multimodal context windows via Gemini API
+
 Google’s position is interesting because it is not really one product.
 
 It is a family:
