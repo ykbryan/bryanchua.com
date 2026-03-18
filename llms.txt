@@ -1,0 +1,10 @@
+# Bryan Chua
+
+## Profile
+- **Current Role:** CTO at GoPomelo & Digital China Group
+- **Background:** Ex-startup founder and CTO
+- **Themes:** Enterprise AI, agentic workflows, engineering leadership, startups.
+- **Philosophy:** Pragmatic execution over hype. Focus on real-world implementation and leadership.
+
+## Content Focus
+Bryan writes essays covering enterprise AI application, building and scaling startups, and the nuances of engineering leadership from the perspective of an experienced operator.

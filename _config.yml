@@ -5,8 +5,8 @@
 
 # Site
 title: Bryan's Notes
-subtitle:
-description:
+subtitle: "Startup CTO & AI Operator"
+description: "Essays on Enterprise AI, Startups, and Engineering Leadership by Bryan Chua."
 author: Bryan Chua
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
@@ -14,7 +14,7 @@ date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url:
+url: "https://bryanchua.com"
 baseurl:
 permalink: pretty
 
