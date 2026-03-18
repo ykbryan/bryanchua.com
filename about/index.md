@@ -12,3 +12,7 @@ Currently, I serve as CTO & Director at GoPomelo & Digital China Group, helping 
 We are in a defining era of technology, heavily driven by AI, intelligent agents, and automation. But the gap between whiteboard hype and real-world deployment is widening. I focus on closing that gap. Whether I am advising startups or leading enterprise tech strategies, my priority is fostering an AI-first mindset that actually moves the needle—optimizing operations, driving GTM strategies, and building resilient, people-centric engineering cultures.
 
 I write here to share startup scaling lessons, enterprise AI adoption frameworks, and the unvarnished realities of operating at the intersection of business and technology.
+
+### A Final Note
+
+This blog is written strictly for myself. It serves as a public notebook for my own thoughts, learnings, and reflections. It is not meant to cater to an audience or win popularity contests. If you read something here and disagree with what I write or say—that's perfectly fine. You are entirely free to ignore me and close the tab.
