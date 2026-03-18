@@ -10,6 +10,8 @@ tags:
  - Swarm
  - Architecture
 ---
+# Taming the "Runaway AI Developer": How I Built the Shelldon Swarm Protocol
+
 
 Everyone loves the demo. You type a prompt, an autonomous AI agent writes a script, and suddenly we're living in the future. 
 
