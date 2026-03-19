@@ -21,7 +21,7 @@ The reality of "runaway AI" hits fast: looping hallucinations that rack up massi
 
 If you want an AI workforce to actually drive business value without burning your runway or taking down your infrastructure, you can't just unleash them. You have to manage them. 
 
-As an operator and former founder, I don't care about the demo. I care about the deployment. Over the past year, I’ve built a 20-agent swarm to automate both our software engineering and content pipelines. To make it work reliably, we had to build rigorous guardrails. We call it the Shelldon Swarm Protocol.
+As an operator and former founder, I don't care about the demo. I care about the deployment. Over the past one week, I’ve built a 20-agent swarm to automate both our software engineering, content pipelines and work automations. To make it work reliably, we had to build rigorous guardrails. We call it the Shelldon Swarm Protocol.
 
 Here is how we tame the chaos, control the costs, and actually get work done.
 
