@@ -87,9 +87,9 @@ Why this matters: This protocol ensures that compute resources (and your money) 
 
 ---
 
-## Real-World Swarm 2: The Content Swarm
+## Real-World Swarm 2: The Octonauts Swarm
 
-We apply the exact same pipeline philosophy to our marketing and content generation. This blog post you are reading right now? It was produced by our 4-agent Content Swarm.
+We apply the exact same pipeline philosophy to our marketing and content generation. This blog post you are reading right now? It was produced by our 4-agent Octonauts Swarm.
 
 1.  **The Scout (Looker):** Looker constantly scours the market, tech news, and our internal notes to identify high-value topics and trends.
 2.  **The Architect (Deer):** Deer takes Looker's raw data and builds a structured outline, strictly aligning the narrative with my specific operator voice and tone constraints.
