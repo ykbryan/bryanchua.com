@@ -101,6 +101,8 @@ We apply the exact same pipeline philosophy to our marketing and content generat
 ---
 
 ## The UI Layer: Orchestration via Telegram Topics & Cron Jobs
+\n![Telegram Setup](/assets/images/telegram-setup.jpg)
+
 
 
 Having 20 agents is useless if the user experience is clunky. I don't use a massive custom dashboard; I use Telegram. Specifically, a single Telegram Supergroup divided into distinct Topics (e.g., Blog, Dev, Stocks, Ideas, Work, Shopping). 
@@ -108,7 +110,7 @@ Having 20 agents is useless if the user experience is clunky. I don't use a mass
 This isn't just for organization—it is a deliberate architecture choice for token optimization and context management:
 
 1.  **Topics as Context Boundaries:** If I ask my stock agent (Angel) a question in the "Stocks" topic, the system doesn't need to load the context of my recent "Blog" drafts or "Dev" commits. By strictly routing agents to specific topics, we maintain hyper-focused context windows. This dramatically reduces hallucinations and slashes token costs per message.
-2.  **Asynchronous Learning via Cron Jobs:** Notice the pinned message in the screenshot: *"Research every day at 3am... Browse through my LinkedIn, x.com and Reddit..."* Instead of burning expensive tokens asking an agent to browse the web during an active conversation, I use OpenClaw's cron scheduler. The swarm runs automated background jobs while I sleep—scraping industry trends and summarizing them. They update their internal memory files directly. 
+2.  **Asynchronous Learning via Cron Jobs:** Notice the pinned message in the screenshot: *"I want to set up a morning brief. Every morning at 8:00 AM, send me a report here..."* Instead of burning expensive tokens asking an agent to browse the web during an active conversation, I use OpenClaw's cron scheduler. The swarm runs automated background jobs while I sleep—scraping industry trends and summarizing them. They update their internal memory files directly. 
 
 By the time I wake up, the agents are already smarter and updated on the day's events. When I chat with them, they rely on this digested, compressed memory rather than performing expensive real-time web execution.
 
