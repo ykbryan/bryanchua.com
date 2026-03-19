@@ -58,7 +58,7 @@ Here is what that looks like in practice.
 
 ## Real-World Swarm 1: The Software Assembly Line
 
-Our engineering swarm doesn't just write code; it operates like a rigorous factory floor. The core of the Shelldon Swarm Protocol is an enforced separation of duties. Builders cannot architect, and builders definitely cannot deploy. 
+Our engineering swarm doesn't just write code; it operates like a rigorous factory floor. The core of the "Shelldon Swarm Protocol" (i randomly named this) is an enforced separation of duties. Builders cannot architect, and builders definitely cannot deploy. 
 
 ### The Foundation: Isolated Specs
 All active web codebases must live exclusively inside `/home/develop/projects/`. No scattered files. Every project root must contain a `SPEC.md`. This is the single source of truth. It contains the elevator pitch, target user, market validation scores (out of 10), and the strict list of "Core Features (MVP)".
