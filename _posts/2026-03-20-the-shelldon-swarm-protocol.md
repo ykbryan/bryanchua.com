@@ -37,7 +37,7 @@ By treating the system as a cooperative network of specialized agents, we can ag
 
 Our architecture relies on a triad of models:
 *   **Qwen (via Ollama):** Deployed qwen3.5:397b-cloud for the low-level. It handles basic task, summarization, and data structuring where a frontier model would be overkill.
-*   **Gemini 3.1 Pro Preview:** Deployed for tasks requiring massive context windows, rapid multimodal processing, and deep synthesis of sprawling datasets.
+*   **Gemini 3.1 Pro Preview:** Deployed for tasks requiring massive context windows, rapid multimodal processing, all my conversations, routing and deep synthesis of sprawling datasets.
 *   **OpenAI GPT-5.4:** Reserved for high-stakes reasoning, complex code generation, and nuanced strategic decision-making where absolute precision is non-negotiable.
 
 This multi-model approach completely changes the unit economics of our operations. By offloading the heavy volume of low-complexity tasks to local or highly optimized models like Qwen, we drastically cut down API burn rates. We only pay the premium for GPT-5.4 or Gemini 3.1 Pro Preview when the specific agent's task demands that level of intelligence. 
