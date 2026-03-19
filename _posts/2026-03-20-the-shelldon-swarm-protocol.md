@@ -17,7 +17,7 @@ Everyone loves the demo. You type a prompt, an autonomous AI agent writes a scri
 
 Then you put it in production. 
 
-The reality of "runaway AI" hits fast: looping hallucinations that rack up massive API bills over a weekend, agents aggressively refactoring perfectly good legacy code until it breaks, or a rogue bot confidently pushing half-baked features straight to master. The tech industry is currently drowning in agentic hype, treating LLMs like magic wands rather than what they actually are: highly capable, highly chaotic interns. 
+The reality of "runaway AI" hits fast: looping hallucinations that rack up massive API bills over a weekend (e.g. I spent USD 60 on one prompt on my first OpenClaw agent), agents aggressively refactoring perfectly good legacy code until it breaks, or a rogue bot confidently pushing half-baked features straight to master. The tech industry is currently drowning in agentic hype, treating LLMs like magic wands rather than what they actually are: highly capable, highly chaotic interns. 
 
 If you want an AI workforce to actually drive business value without burning your runway or taking down your infrastructure, you can't just unleash them. You have to manage them. 
 
