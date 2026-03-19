@@ -61,7 +61,7 @@ Here is what that looks like in practice.
 Our engineering swarm doesn't just write code; it operates like a rigorous factory floor. The core of the "Shelldon Swarm Protocol" (i randomly named this) is an enforced separation of duties. Builders cannot architect, and builders definitely cannot deploy. 
 
 ### The Foundation: Isolated Specs
-All active web codebases must live exclusively inside `/home/develop/projects/`. No scattered files. Every project root must contain a `SPEC.md`. This is the single source of truth. It contains the elevator pitch, target user, market validation scores (out of 10), and the strict list of "Core Features (MVP)".
+All active web codebases must live exclusively inside projects folder under user root directory i.e. `/home/myuser/projects/`. No scattered files. Every project root must contain a `SPEC.md`. This is the single source of truth. It contains the elevator pitch, target user, market validation scores (out of 10), and the strict list of "Core Features (MVP)".
 
 ### Gate 1: The Pre-Build Go/No-Go
 Before a single line of code is written, the `SPEC.md` must pass a 4-step audit:
