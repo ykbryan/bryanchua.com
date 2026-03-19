@@ -88,6 +88,8 @@ Why this matters: This protocol ensures that compute resources (and your money) 
 ---
 
 ## Real-World Swarm 2: The Octonauts Swarm
+\n![Octonauts Swarm](/assets/images/octonauts-swarm.jpg)
+
 
 We apply the exact same pipeline philosophy to our marketing and content generation. This blog post you are reading right now? It was produced by our 4-agent Octonauts Swarm.
 
