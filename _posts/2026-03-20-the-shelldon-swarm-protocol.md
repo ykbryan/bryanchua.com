@@ -1,6 +1,6 @@
 ---
-title: "Taming the Runaway AI Developer: The Shelldon Swarm Protocol"
-description: "A pragmatic guide to deploying a 19-agent asynchronous AI swarm in production. Discover how strict gating, heterogeneous models (Qwen, GPT-5.4, Gemini 3.1 Pro), and native execution can solve the agentic AI orchestration nightmare."
+title: "Taming the \"Runaway AI Developer\": How I Built the \"Shelldon Swarm\" Protocol"
+description: "A pragmatic guide to deploying a 20-agent asynchronous AI swarm in production. Discover how strict gating, heterogeneous models (Qwen, GPT-5.4, Gemini 3.1 Pro), and native execution can solve the agentic AI orchestration nightmare."
 categories:
  - Tech
 tags:
@@ -10,7 +10,7 @@ tags:
  - Swarm
  - Architecture
 ---
-# Taming the "Runaway AI Developer": How I Built the Shelldon Swarm Protocol
+# Taming the "Runaway AI Developer": How I Built the "Shelldon Swarm" Protocol
 
 
 Everyone loves the demo. You type a prompt, an autonomous AI agent writes a script, and suddenly we're living in the future. 
@@ -21,19 +21,19 @@ The reality of "runaway AI" hits fast: looping hallucinations that rack up massi
 
 If you want an AI workforce to actually drive business value without burning your runway or taking down your infrastructure, you can't just unleash them. You have to manage them. 
 
-As an operator and former founder, I don't care about the demo. I care about the deployment. Over the past year, I’ve built a 19-agent swarm to automate both our software engineering and content pipelines. To make it work reliably, we had to build rigorous guardrails. We call it the Shelldon Swarm Protocol.
+As an operator and former founder, I don't care about the demo. I care about the deployment. Over the past year, I’ve built a 20-agent swarm to automate both our software engineering and content pipelines. To make it work reliably, we had to build rigorous guardrails. We call it the Shelldon Swarm Protocol.
 
 Here is how we tame the chaos, control the costs, and actually get work done.
 
 ---
 
-## 1. The 19-agent heterogeneous multi-model architecture (Qwen + OpenAI + Gemini)
+## 1. The 20-agent heterogeneous multi-model architecture (Qwen + OpenAI + Gemini)
 
 When you look under the hood of most enterprise AI implementations today, you often see a monolithic approach: a single, massive frontier model being hammered with every conceivable prompt, from complex reasoning down to basic text formatting. It works, but it’s expensive, slow, and horribly inefficient.
 
-Instead, we built a 19-agent heterogeneous swarm. 
+Instead, we built a 20-agent heterogeneous swarm. 
 
-By treating the system as a cooperative network of specialized agents, we can aggressively optimize for both performance and cost. The secret sauce isn't just having 19 agents—it's matching the cognitive load of a specific task to the exact right model.
+By treating the system as a cooperative network of specialized agents, we can aggressively optimize for both performance and cost. The secret sauce isn't just having 20 agents—it's matching the cognitive load of a specific task to the exact right model.
 
 Our architecture relies on a triad of models:
 *   **Qwen (via Ollama):** Deployed locally for the low-level, high-volume grunt work. It handles basic routing, summarization, and data structuring where a frontier model would be overkill.
