@@ -50,7 +50,9 @@ Spamming a single expensive model for everything is the brute-force way to build
 
 Most out-of-the-box agent frameworks trap your AI in sterile cloud sandboxes. It’s safe, but it’s practically useless for real enterprise work. 
 
-My agents execute natively on dedicated nodes (macOS and Ubuntu) sitting at my house, locked behind [Tailscale](https://tailscale.com) only. I also create sandbox environments via [Coolify](https://github.com/coollabsio/coolify) where I can spin off UAT, DEV and many other environments as I need whenever there is a need for testing (especially testing the new openclaw version). They have real terminal access, read/write permissions to actual file systems, and the ability to trigger real deployment pipelines. But giving AI native execution access is exactly how you get a "runaway developer." 
+My agents execute natively on dedicated nodes (macOS and Ubuntu) sitting at my house, locked behind [Tailscale](https://tailscale.com) only. I also create sandbox environments via [Coolify](https://github.com/coollabsio/coolify) where I can spin off UAT, DEV and many other environments as I need whenever there is a need for testing (especially testing the new openclaw version). They have real terminal access, read/write permissions to actual file systems, and the ability to trigger real deployment pipelines. But giving AI native execution access is exactly how you get a "runaway developer."
+
+![Coolify Sandbox Environments](/assets/images/coolify-setup.jpg) 
 
 To solve this, you don't castrate the agent's environment—you institute hardcoded, immutable pipeline gates. You don't limit *where* they can work; you tightly control *when* they are allowed to proceed. 
 
