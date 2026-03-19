@@ -102,7 +102,6 @@ We apply the exact same pipeline philosophy to our marketing and content generat
 
 ## The UI Layer: Orchestration via Telegram Topics & Cron Jobs
 
-![Telegram Setup](/assets/images/telegram-setup.jpg)
 
 Having 20 agents is useless if the user experience is clunky. I don't use a massive custom dashboard; I use Telegram. Specifically, a single Telegram Supergroup divided into distinct Topics (e.g., Blog, Dev, Stocks, Ideas, Work, Shopping). 
 
