@@ -36,7 +36,7 @@ Instead, we built a 20-agent heterogeneous swarm.
 By treating the system as a cooperative network of specialized agents, we can aggressively optimize for both performance and cost. The secret sauce isn't just having 20 agents—it's matching the cognitive load of a specific task to the exact right model.
 
 Our architecture relies on a triad of models:
-*   **Qwen (via Ollama):** Deployed locally for the low-level, high-volume grunt work. It handles basic routing, summarization, and data structuring where a frontier model would be overkill.
+*   **Qwen (via Ollama):** Deployed qwen3.5:397b-cloud for the low-level. It handles basic task, summarization, and data structuring where a frontier model would be overkill.
 *   **Gemini 3.1 Pro Preview:** Deployed for tasks requiring massive context windows, rapid multimodal processing, and deep synthesis of sprawling datasets.
 *   **OpenAI GPT-5.4:** Reserved for high-stakes reasoning, complex code generation, and nuanced strategic decision-making where absolute precision is non-negotiable.
 
