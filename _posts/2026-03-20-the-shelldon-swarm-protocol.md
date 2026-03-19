@@ -50,7 +50,19 @@ Most out-of-the-box agent frameworks trap your AI in sterile cloud sandboxes. It
 
 My agents execute natively on dedicated nodes (macOS and Ubuntu) sitting at my house, locked behind [Tailscale](https://tailscale.com) only. I also create sandbox environments via [Coolify](https://github.com/coollabsio/coolify) where I can spin off UAT, DEV and many other environments as I need whenever there is a need for testing (especially testing the new openclaw version). They have real terminal access, read/write permissions to actual file systems, and the ability to trigger real deployment pipelines. But giving AI native execution access is exactly how you get a "runaway developer." 
 
-You solve this not by castrating the agent's environment, but by instituting hardcoded, immutable pipeline gates. You don't limit *where* they can work; you tightly control *when* they are allowed to proceed. 
+To solve this, you don't castrate the agent's environment—you institute hardcoded, immutable pipeline gates. You don't limit *where* they can work; you tightly control *when* they are allowed to proceed. 
+
+### The Performance Leap of Dedicated Hardware
+
+A massive architectural advantage of this setup is physical isolation and native speeds. Builder agents like Gorilla (Web), Ivy (iOS), and Jelly (Content) don't just share a generic cloud container—they operate on their own dedicated physical machines equipped with their own pre-configured GitHub tokens. 
+
+The performance gain from executing natively versus sending code over network tunnels is staggering. In a standard remote-node setup, every file operation means bytes have to serialize and ping-pong across a Tailscale tunnel, introducing massive latency on large codebases. 
+
+By executing natively on the node, we bypass the network entirely. We recently had Gorilla run a raw native disk I/O test on the `develop-ubuntu` machine, writing a 500MB payload directly to disk. The result? **4.2 GB/s throughput in exactly 0.13 seconds.**
+
+![Node Performance Benchmark](/assets/images/node-benchmark.jpg)
+
+This architectural shift provides zero network overhead for file operations, instantaneous filesystem speeds, drastically fewer connection issues, and safely isolates these heavy-duty development environments from the primary OpenClaw gateway.
 
 Here is what that looks like in practice. 
 
