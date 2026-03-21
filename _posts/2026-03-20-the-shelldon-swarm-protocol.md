@@ -107,12 +107,34 @@ Why this matters: This protocol ensures that compute resources (and your money) 
 \n![Octonauts Swarm](/assets/images/octonauts-swarm.jpg)
 
 
-We apply the exact same pipeline philosophy to our marketing and content generation. This blog post you are reading right now? It was produced by our 4-agent Octonauts Swarm.
+What makes the Octonauts Swarm useful is not a bunch of AIs improvising at once.
 
-1.  **The Scout (Looker):** Looker constantly scours the market, tech news, and our internal notes to identify high-value topics and trends.
-2.  **The Architect (Deer):** Deer takes Looker's raw data and builds a structured outline. Because Deer also serves as my dedicated LinkedIn agent, she already understands most of my intents based on my daily LinkedIn activities. She automatically aligns the narrative with my specific operator voice, tone constraints, and personal writing style.
-3.  **The Writer (Jelly):** Jelly takes the approved outline and drafts the long-form content. Jelly runs natively on an `ubuntu-personal` node and commits the markdown files directly to our staging repository. 
-4.  **The Gatekeeper (Queen):** Before anything goes live, Queen steps in. She acts as the final SEO and AEO (Answer Engine Optimization) reviewer, ensuring the meta-structure is perfect before automatically pushing the final draft to the master branch for publishing.
+It works because each agent has a clear role, limited permissions, and a defined place in the chain of command.
+
+Even in writing this post, the structure matters:
+
+- **Evelyn** orchestrates.
+- **Roy** pressure-tests the ambition and sharpness of the argument.
+- **Looker** validates whether the market reality supports the thesis.
+- **Deer** shapes the final draft for voice, clarity, and publication.
+
+And I still remain the human in control.
+I review the draft.
+I decide what stays.
+I approve what gets published.
+
+The same model carries into product building:
+
+- **Roy** challenges strategy.
+- **Kat** defines requirements.
+- **Omega** designs architecture.
+- **Gorilla** or **Ivy** implement.
+- **Norton** deploys.
+- **Mother** monitors production.
+
+The lesson is simple:
+
+AI becomes far more reliable when it behaves less like a lone genius and more like a real organization — with structure, accountability, and decision gates.
 
 ---
 
