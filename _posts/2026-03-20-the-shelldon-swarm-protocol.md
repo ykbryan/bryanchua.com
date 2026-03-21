@@ -117,7 +117,7 @@ Even in writing this post, the structure matters:
 - **Evelyn** orchestrates.
 - **Roy** pressure-tests whether the argument is ambitious, sharp, and worth saying publicly.
 - **Looker** checks whether the market reality actually supports the thesis.
-- **Deer** shapes the draft into a voice and format that fit publication.
+- **Deer** shapes the draft into my voice — drawing on my previous blog posts and LinkedIn writing — and formats it to fit the narratives I want to tell.
 
 And I still remain the human in control.
 I review the draft.
