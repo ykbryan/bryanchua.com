@@ -29,7 +29,7 @@ Here is how we tame the chaos, control the costs, and actually get work done.
 
 ---
 
-## 1. The 20-agent heterogeneous multi-model architecture (Qwen + OpenAI + Gemini)
+## 1. The 20-agent heterogeneous multi-model architecture (Qwen + OpenAI + Claude + Gemini)
 
 When you look under the hood of most enterprise AI implementations today, you often see a monolithic approach: a single, massive frontier model being hammered with every conceivable prompt, from complex reasoning down to basic text formatting. It works, but it’s expensive, slow, and horribly inefficient.
 
@@ -37,12 +37,13 @@ Instead, we built a 20-agent heterogeneous swarm.
 
 By treating the system as a cooperative network of specialized agents, we can aggressively optimize for both performance and cost. The secret sauce isn't just having 20 agents—it's matching the cognitive load of a specific task to the exact right model.
 
-Our architecture relies on a triad of models:
+Our architecture relies on a portfolio of models:
 *   **Qwen (via Ollama):** Deployed qwen3.5:397b-cloud for the low-level. It handles basic task, summarization, and data structuring where a frontier model would be overkill.
-*   **Gemini 3.1 Pro Preview:** Deployed for tasks requiring massive context windows, rapid multimodal processing, all my conversations, routing and deep synthesis of sprawling datasets.
+*   **Gemini 3.1 Pro Preview:** Deployed for tasks requiring massive context windows, rapid multimodal processing, routing, and deep synthesis of sprawling datasets.
+*   **Claude:** Used when we need strong long-form writing quality, careful reasoning, and cleaner editorial judgment across planning, review, and structured content work.
 *   **OpenAI GPT-5.4:** Reserved for high-stakes reasoning, complex code generation, and nuanced strategic decision-making where absolute precision is non-negotiable.
 
-This multi-model approach completely changes the unit economics of our operations. By offloading the heavy volume of low-complexity tasks to local or highly optimized models like Qwen, we drastically cut down API burn rates. We only pay the premium for GPT-5.4 or Gemini 3.1 Pro Preview when the specific agent's task demands that level of intelligence. 
+This multi-model approach completely changes the unit economics of our operations. By offloading the heavy volume of low-complexity tasks to local or highly optimized models like Qwen, we drastically cut down API burn rates. We only pay the premium for Gemini, Claude, or GPT-5.4 when the specific agent's task genuinely demands that level of intelligence. 
 
 Spamming a single expensive model for everything is the brute-force way to build. A heterogeneous, multi-model agent swarm is how you build for scale, speed, and sustainable cost control.
 
