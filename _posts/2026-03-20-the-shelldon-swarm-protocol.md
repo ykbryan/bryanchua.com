@@ -11,7 +11,7 @@ tags:
  - Architecture
 ---
 # Mastering Agent Swarms: Multi-Model Integration and OpenClaw Multi-Agent Architectures Explained
-\n![Agent Command Center](/assets/images/agent-command-center.jpg)
+![Agent Command Center](/assets/images/agent-command-center.jpg)
 
 
 
@@ -105,7 +105,7 @@ Why this matters: This protocol ensures that compute resources (and your money) 
 ---
 
 ## Real-World Swarm 2: The Octonauts Swarm
-\n![Octonauts Swarm](/assets/images/octonauts-swarm.jpg)
+![Octonauts Swarm](/assets/images/octonauts-swarm.jpg)
 
 
 What makes the Octonauts Swarm useful is not that it is a group of AIs improvising at once.
@@ -140,7 +140,7 @@ AI becomes far more reliable when it behaves less like a lone genius and more li
 ---
 
 ## The UI Layer: Orchestration via Telegram Topics & Cron Jobs
-\n![Telegram Setup](/assets/images/telegram-setup.jpg)
+![Telegram Setup](/assets/images/telegram-setup.jpg)
 
 
 
