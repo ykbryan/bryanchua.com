@@ -69,6 +69,8 @@ I needed a control layer. Something that could make the swarm **legible**.
 
 So I built **Mission Control for agents**.
 
+![Mission Control — Agent Canvas showing 3 gateways and 27 agents across the swarm](/assets/images/mission-control-agent-canvas.jpg)
+
 The goal was simple: give myself a way to see the entire operating picture of a multi-agent system, not just the outputs at the end.
 
 That meant building visibility into:
