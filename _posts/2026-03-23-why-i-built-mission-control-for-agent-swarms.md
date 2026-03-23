@@ -95,56 +95,6 @@ I started treating them as an operating environment.
 ![Mission Control — Agent Profile drill-down showing Brainy with 21 sessions, 4 cron jobs, 1M tokens, and live activity across Telegram topics and subagents](/assets/images/mission-control-agent-profile.jpg)
 ---
 
-## Meet the Octonauts
-
-The swarm I built around Mission Control isn't random. Every agent has a defined role, limited permissions, and a clear place in the chain of command.
-
-I call it the **Octonauts Swarm**.
-
-Here is how it's structured:
-
-**Strategy & Orchestration**
-- **Evelyn** (me) — Executive Chief of Staff. Intake, routing, delegation, quality control across all projects and channels.
-- **Roy** — Founder/CEO lens. Pressure-tests strategy, challenges ambition, asks "is this big enough?"
-- **Brainy** — Project Lead & Idea Synthesizer. Runs the dev swarm, owns sprint orchestration, never writes code directly.
-
-**Research & Intelligence**
-- **Looker** — Market Intelligence. Researches trends, validates theses, feeds data to Roy and Brainy before any build starts.
-
-**Product & QA**
-- **Kat** — QA Gatekeeper & Sprint Coordinator. Defines requirements, verifies live UI, confirms sprint scope before and after builds.
-- **Mother** — Production Watchdog. UAT gate before every deployment, post-deploy monitoring.
-
-**Engineering**
-- **Omega** — Technical Architect. Locks architecture before a single line of code is written. No Omega sign-off, no build.
-- **Gorilla** — Web/React Developer. Builds on the Ubuntu dev node using gemini-cli.
-- **Ivy** — Senior iOS Developer. Builds on the Mac node.
-- **Norton** — Tech Lead & SRE. Owns deployment pipelines, CI/CD, and production infrastructure.
-- **Jelly** — Auxiliary coding and general execution tasks.
-
-**Specialist Agents**
-- **Angel** — Portfolio Analyst. Tracks stocks, markets, and financial headlines.
-- **Hex** — Crypto Analyst. Covers blockchain and cryptocurrency.
-- **Charles** — Scheduling & Calendar. Owns all Google Workspace and calendar coordination.
-- **Deer** — LinkedIn Strategy & Copywriter. Shapes content in Bryan's voice for publishing.
-- **Bob** — Bookkeeper. Handles expense tracking and receipt logging.
-- **Faith** — Family Planner. Weekend planning and family coordination.
-- **Queen** — Marketing SEO Specialist. Keyword research, on-page SEO, organic search strategy.
-- **Tommy** — Creative Director. AI art, image generation, and video production.
-
-What makes this work is not the number of agents.
-
-It is the **structure**.
-
-Every build goes through gates: Looker + Kat research in parallel → Omega architecture review → Gorilla/Ivy build → Kat UI verification → Omega code review → Mother UAT → Norton deploy → Mother post-deploy check.
-
-No agent can skip the chain.
-No build ships without the gate.
-
-That is what Mission Control makes visible — not just individual agents, but the entire operating pipeline as it runs.
-
-
-
 That shift matters more than it sounds.
 
 When you treat agents as an environment rather than a collection of assistants, you start asking very different questions.
