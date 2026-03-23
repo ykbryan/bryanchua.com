@@ -15,6 +15,8 @@ tags:
 
 I didn't plan to build a dashboard. I planned to build with AI agents.
 
+![Mission Control — Agentic Teams view showing 27 agents across orchestrated swarms](/assets/images/mission-control-agentic-teams.jpg)
+
 Multiple agents. Parallel execution. Gemini. Codex. Claude Code. Different roles, different tools, different stages — architecture, implementation, QA, deployment, coordination — all running at the same time.
 
 And very quickly, the problem stopped being, "Can the model produce something useful?"
