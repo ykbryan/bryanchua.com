@@ -92,6 +92,8 @@ I stopped thinking about agents as isolated chat windows running in parallel tab
 
 I started treating them as an operating environment.
 
+![Mission Control — Agent Profile drill-down showing Brainy with 21 sessions, 4 cron jobs, 1M tokens, and live activity across Telegram topics and subagents](/assets/images/mission-control-agent-profile.jpg)
+
 That shift matters more than it sounds.
 
 When you treat agents as an environment rather than a collection of assistants, you start asking very different questions.
