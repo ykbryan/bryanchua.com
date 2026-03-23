@@ -55,6 +55,8 @@ You're managing a system.
 
 And systems behave differently from assistants. They have state. They have dependencies. They have failure modes that are hard to trace unless you can see what's happening at every layer.
 
+![Mission Control — Agent Activities view showing live logs and agent activity across the swarm](/assets/images/mission-control-agent-activities.jpg)
+
 Without visibility, even very capable agents start to feel unreliable. Not because the models are bad, but because you can't see enough to understand what went wrong or why something worked.
 
 That is the gap I kept running into.
