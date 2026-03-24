@@ -90,10 +90,9 @@ Once I could see the system this way, the whole operating model changed.
 
 I stopped thinking about agents as isolated chat windows running in parallel tabs.
 
-I started treating them as an operating environment.
+I started treating them as an operating environment to run the agentic workflow.
 
 ![Mission Control — Agent Profile drill-down showing Brainy with 21 sessions, 4 cron jobs, 1M tokens, and live activity across Telegram topics and subagents](/assets/images/mission-control-agent-profile.jpg)
----
 
 That shift matters more than it sounds.
 
