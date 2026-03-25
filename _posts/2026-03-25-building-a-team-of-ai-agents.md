@@ -11,77 +11,18 @@ tags:
   - MultiAgent
   - SEO
   - Engineering
+schema:
+  - Article
+  - Person
+  - FAQPage
+faq:
+  - q: "What is an AI agent content pipeline?"
+    a: "An AI agent content pipeline is a multi-agent AI system where specialized agents handle distinct editorial tasks — research, pressure-testing, drafting, SEO, and publishing — in a structured sequence, reducing the manual workload for a human operator."
+  - q: "Can AI agents replace human editorial judgment?"
+    a: "Not fully. AI agents handle structure, research synthesis, and SEO well, but judgment calls — tone, timing, nuance — still require a human in the loop. The approval step is load-bearing, not ceremonial."
+  - q: "Is an AI content automation pipeline worth building?"
+    a: "It depends on your situation. It works well for solo operators or small teams with high output pressure and an established voice. It breaks down when you need strong editorial voice at scale or do not have time to calibrate the agents properly."
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      "headline": "How I Built an AI Agent Content Pipeline — And What Actually Broke",
-      "description": "I ran a six-agent AI content pipeline — the Octonauts — from brief to published post. Here's what worked, what broke, and what I actually think about AI content automation.",
-      "author": {
-        "@type": "Person",
-        "name": "Bryan Chua",
-        "url": "https://bryanchua.com",
-        "jobTitle": "CTO & Director",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "GoPomelo"
-        }
-      },
-      "datePublished": "2026-03-25",
-      "publisher": {
-        "@type": "Person",
-        "name": "Bryan Chua",
-        "url": "https://bryanchua.com"
-      }
-    },
-    {
-      "@type": "Person",
-      "name": "Bryan Chua",
-      "url": "https://bryanchua.com",
-      "jobTitle": "CTO & Director",
-      "worksFor": [
-        { "@type": "Organization", "name": "GoPomelo" },
-        { "@type": "Organization", "name": "Digital China Group" }
-      ],
-      "alumniOf": { "@type": "Organization", "name": "ShopBack" }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is an AI agent content pipeline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "An AI agent content pipeline is a multi-agent AI system where specialized agents handle distinct editorial tasks — research, pressure-testing, drafting, SEO, and publishing — in a structured sequence, reducing the manual workload for a human operator."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can AI agents replace human editorial judgment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not fully. AI agents handle structure, research synthesis, and SEO well, but judgment calls — tone, timing, nuance — still require a human in the loop. The approval step is load-bearing, not ceremonial."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is an AI content automation pipeline worth building?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends on your situation. It works well for solo operators or small teams with high output pressure and an established voice. It breaks down when you need strong editorial voice at scale or don't have time to calibrate the agents properly."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
-
 *by Bryan Chua*
 
 The first time the pipeline broke, it was because Roy — my AI pressure-tester — decided my post idea was too generic to publish.

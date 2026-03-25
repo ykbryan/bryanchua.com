@@ -132,4 +132,66 @@
   <link rel="canonical" href="{{ page.canonical_path | replace: 'index.html', '' | absolute_url }}"/>
 {% endif %}
 
+
+{% comment %} Structured data / JSON-LD schema injection — driven by front matter `schema:` list {% endcomment %}
+{% if page.schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% for schema_type in page.schema %}
+      {% if schema_type == "Article" %}
+    {
+      "@type": "Article",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | default: page.excerpt | strip_html | jsonify }},
+      "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author }}",
+        "url": "{{ site.url }}"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "{{ site.author }}",
+        "url": "{{ site.url }}"
+      },
+      "url": "{{ page.url | absolute_url }}"
+    }{% unless forloop.last %},{% endunless %}
+      {% endif %}
+      {% if schema_type == "Person" %}
+    {
+      "@type": "Person",
+      "name": "{{ site.author }}",
+      "url": "{{ site.url }}",
+      "jobTitle": "CTO & Director",
+      "worksFor": [
+        { "@type": "Organization", "name": "GoPomelo" },
+        { "@type": "Organization", "name": "Digital China Group" }
+      ],
+      "alumniOf": { "@type": "Organization", "name": "ShopBack" }
+    }{% unless forloop.last %},{% endunless %}
+      {% endif %}
+      {% if schema_type == "FAQPage" and page.faq %}
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for item in page.faq %}
+        {
+          "@type": "Question",
+          "name": {{ item.q | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ item.a | jsonify }}
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+      {% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
 {% include _partials/head/custom-head.html %}
