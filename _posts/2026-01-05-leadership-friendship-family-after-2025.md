@@ -8,6 +8,9 @@ tags:
  - Leadership
  - Family
  - Priorities
+schema:
+  - Article
+  - Person
 ---
 
 ![Sunset at Beijing after work](/assets/images/reflection-2025-beijing-sunset.jpg)

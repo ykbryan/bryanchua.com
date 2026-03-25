@@ -8,6 +8,9 @@ tags:
  - Engineering
  - Architecture
  - Google
+schema:
+  - Article
+  - Person
 ---
 
 A technology leader's reflection on the recent shift in AI architecture—moving from vanity metric scaling to true omni-modal problem solving. We've spent the last few years treating text as the universal language of AI. It wasn't. It was just a limitation we had to accept.

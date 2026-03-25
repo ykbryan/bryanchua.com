@@ -9,6 +9,9 @@ tags:
  - AI Architecture
  - LLMs
  - Open Source AI
+schema:
+  - Article
+  - Person
 ---
 
 I’m on holiday currently for a few days, taking a break and this opportunity to delve deeper into DeepSeek-AI’s technical papers, specifically the [DeepSeek-V3 technical paper](https://arxiv.org/pdf/2412.19437) and [DeepSeep-V2 technical paper](https://arxiv.org/pdf/2405.04434). In this blog, I’ll share my thoughts, what I learned, and the technical aspects I found most interesting. I put the headings below to assess DeepSeek’s core advancements, evaluate its advanced & reasoning-focused model, and explore what these developments mean for AI strategies and startup opportunities.

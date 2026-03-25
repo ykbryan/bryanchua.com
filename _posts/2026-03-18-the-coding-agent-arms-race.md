@@ -9,6 +9,17 @@ tags:
  - Developer Tools
  - Startups
  - Productivity
+schema:
+  - Article
+  - Person
+  - FAQPage
+faq:
+  - q: "Which coding agent is best for founders and operators who still build?"
+    a: "Codex is the recommended starting point for founders, ex-startup CTOs, and operators who build. It is fast, low-friction, and execution-oriented — ideal for prototyping, shipping internal tools, and short iteration loops."
+  - q: "Which AI coding agent is best for senior engineers managing complex codebases?"
+    a: "Claude Code is strongest for senior engineers, architects, and technical leads. It excels at large refactors, architecture reasoning, code review, and understanding intent before making changes in legacy or high-risk systems."
+  - q: "What is the difference between Codex, Claude Code, and Gemini for coding?"
+    a: "Codex is the builder — fast and practical. Claude Code is the thinker — best for deep reasoning and large codebases. Gemini (CLI, Code Assist, Jules) is a broad platform play strongest in large-context workflows and Google ecosystem environments."
 ---
 I used to be a startup CTO, and I still evaluate developer tools through one lens: do they reduce friction and help teams move? Here’s my practical take on Codex, Claude Code, Gemini CLI, Gemini Code Assist, and Jules—and why I still personally prefer Codex.
 

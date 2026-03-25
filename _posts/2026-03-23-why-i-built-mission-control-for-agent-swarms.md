@@ -11,6 +11,9 @@ tags:
  - Engineering
  - MultiAgent
  - OpenSource
+schema:
+  - Article
+  - Person
 ---
 
 I didn't plan to build a dashboard. I planned to build with AI agents.

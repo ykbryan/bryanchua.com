@@ -9,6 +9,9 @@ tags:
  - Orchestration
  - Swarm
  - Architecture
+schema:
+  - Article
+  - Person
 ---
 # Mastering Agent Swarms: Multi-Model Integration and OpenClaw Multi-Agent Architectures Explained
 ![Agent Command Center](/assets/images/agent-command-center.jpg)
