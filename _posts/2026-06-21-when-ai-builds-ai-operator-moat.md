@@ -30,7 +30,7 @@ I do my real thinking on weekends. Not in meetings — in conversations with an 
 
 Then I tried Fable 5.
 
-Over a couple of weekends I ran it through planning sessions for projects at GoPomelo and for Routero, the AI infrastructure product we're building at Digital China. What struck me wasn't that it was faster, or more articulate. It was that it *caught things* — problems I hadn't even articulated as problems. On one project review, Fable 5 surfaced 19 distinct development gaps in a single pass: structural, architectural, process-level. I'd run the same context through Opus more than once and never gotten close. Not even half. Some of those gaps had been sitting in the backlog as a vague discomfort I couldn't name. Fable 5 named them.
+Last weekends I ran it through planning sessions for projects at [GoPomelo](https://gopomelo.com) and for [Routero AI](https://routero.ai), the AI infrastructure product we're building at Digital China. What struck me wasn't that it was faster, or more articulate. It was that it *caught things* — problems I hadn't even articulated as problems. On one project review, Fable 5 surfaced 19 distinct development gaps in a single pass: structural, architectural, process-level. I'd run the same context through Opus more than once and never gotten close. Not even half. Some of those gaps had been sitting in the backlog as a vague discomfort I couldn't name. Fable 5 named them.
 
 > That's not a faster tool. That's a different category of capability.
 
