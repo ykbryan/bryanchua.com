@@ -48,9 +48,9 @@ And it's already doing the thing Anthropic keeps describing: compressing months 
 
 ## Why This Puts Anthropic Ahead
 
-The question I get most: isn't OpenAI doing the same thing? What about the open-source models — Llama, Qwen, DeepSeek? Aren't they closing the gap?
+The question I get most: isn't OpenAI doing the same thing? What about the open-source models — Llama, Qwen, DeepSeek, GLM 5.2? Aren't they closing the gap?
 
-After a couple of weekends with Fable 5, my honest answer is no — not on the dimension that matters most.
+After a weekend with Fable 5, my honest answer is no — not on the dimension that matters most.
 
 The open-source models are mildly better than each other. They compete on benchmarks, inference cost, accessibility. That's real, and for a lot of use cases it's enough. But the compound-intelligence gap — the ability to reason about what you *don't* know, to surface the thing that was never in the prompt — I'm only seeing that at the frontier. And right now the frontier is Anthropic.
 
@@ -76,18 +76,21 @@ The better you get at that collaboration — prompting, structuring, validating,
 
 ## What Changes From Here
 
-Anthropic is honest about where this leads. It lays out three plausible futures: the trend stalls but today's capabilities diffuse widely; the labs keep seeing compounding efficiency gains, where humans set direction and AI automates execution; or AI systems themselves become capable of full recursive self-improvement.
+Anthropic is honest about where this leads. It lays out three plausible futures: 
+1) the trend stalls but today's capabilities diffuse widely;
+2) the labs keep seeing compounding efficiency gains, where humans set direction and;
+3) AI automates execution; or AI systems themselves become capable of full recursive self-improvement.
 
 I think we've just entered the middle one. Fable 5 is the first model that makes the efficiency explosion feel real to me rather than theoretical. The open question is how fast the third arrives — and whether our institutions, our companies, and our own mental models can keep pace.
 
-What I'm doing about it: building Routero so that when the models get better, the scaffolding around them — governance, cost control, routing, memory — gets better too. The platform layer isn't the moat either. But it's infrastructure *for* moats. The real work is making sure the humans using these systems improve faster than the systems improve on their own.
+What I'm doing about it: building Routero AI so that when the models get better, the scaffolding around them — governance, cost control, routing, memory — gets better too. The platform layer isn't the moat either. But it's infrastructure *for* moats. The real work is making sure the humans using these systems improve faster than the systems improve on their own.
 
-Because the day the models close the judgment gap — the day Claude sets direction as well as it executes — the operator advantage matters more, not less. You'll want to have already spent the time getting very good at working beside something that's about to become very powerful.
+Because the day the models close the judgment gap — the day Claude sets direction as well as it executes — the operator advantage matters more, not less. You'll want to spend the time getting very good at working beside something that's about to become very powerful.
 
-That weekend with Fable 5 was a small reminder of how fast that day is coming.
+Last weekend with Fable 5 was a small reminder of how fast that era is coming.
 
 ---
 
-*Bryan Chua is CTO of GoPomelo and co-builder of Routero, an enterprise AI infrastructure platform.*
+*Bryan Chua is CTO of GoPomelo, Filigrain & Digital China and co-builder of Routero AI, an enterprise AI infrastructure platform.*
 
 **Sources:** Anthropic, [When AI builds itself](https://www.anthropic.com/institute/recursive-self-improvement) · Anthropic, [Claude Fable 5 and Claude Mythos 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) · VentureBeat, [Anthropic says 80% of its new production code is now authored by Claude](https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up)
