@@ -1,10 +1,28 @@
-# Bryan Chua
+# Bryan Chua — Bryan's Notes
 
-## Profile
-- **Current Role:** CTO at GoPomelo & Digital China Group
-- **Background:** Ex-startup founder and CTO
-- **Themes:** Enterprise AI, agentic workflows, engineering leadership, startups.
-- **Philosophy:** Pragmatic execution over hype. Focus on real-world implementation and leadership.
+> Essays on enterprise AI, AI agents, startups, and engineering leadership, written by Bryan Chua — a startup CTO and AI builder.
 
-## Content Focus
-Bryan writes essays covering enterprise AI application, building and scaling startups, and the nuances of engineering leadership from the perspective of an experienced operator.
+Bryan Chua is CTO at GoPomelo and Digital China Group, and co-builder of Routero (https://routero.ai), an enterprise AI infrastructure platform. He writes from the perspective of an experienced operator: pragmatic execution over hype, real-world implementation, and engineering leadership. He was previously a startup founder and CTO (ShopBack), with earlier engineering leadership at Amazon.
+
+- Site: https://bryanchua.com
+- Author: Bryan Chua, CTO & AI builder
+- Topics: Enterprise AI, AI agents and agentic workflows, AI strategy and moats, startups, engineering leadership
+
+## AI Strategy
+
+- [The Operator Moat, Part 2: The Moat Is the Harness, Not the Model](https://bryanchua.com/strategy/2026/06/28/the-operator-moat-part-2-harness-not-model/): Better models erode the platform layer and amplify the harness layer — that asymmetry is the whole strategy. The durable advantage is the operator and the reusable harness, not the model.
+- [When AI Builds AI: Why the Real Moat Is Becoming a Better Operator](https://bryanchua.com/strategy/2026/06/21/when-ai-builds-ai-operator-moat/): Recursive self-improvement, Claude authoring 80% of Anthropic's merged code, and why durable advantage is operator skill — knowing how to direct AI — not owning the model.
+- [Two Roads, One Destination: Product Engineering vs Business Engineering](https://bryanchua.com/strategy/2026/04/30/product-vs-business-engineering/): How Singtel engineers growth through capital and acquisitions while Notion does it through product signals — the same game played with different instruments.
+
+## AI Agents & Engineering
+
+- [How I Built an AI Agent Content Pipeline — And What Actually Broke](https://bryanchua.com/tech/2026/03/25/building-a-team-of-ai-agents/): Running a six-agent content pipeline (the Octonauts) from brief to published post — what worked, what broke, and the limits of AI content automation.
+- [Why I Built Mission Control for Agent Swarms](https://bryanchua.com/tech/2026/03/23/why-i-built-mission-control-for-agent-swarms/): The hardest part of AI agents isn't prompting — it's observability. Lessons from building multi-agent workflows with Gemini, Codex, and Claude Code.
+- [Mastering Agent Swarms: Multi-Model Integration and OpenClaw Multi-Agent Architectures Explained](https://bryanchua.com/tech/2026/03/20/mastering-agent-swarms-multi-model-integration-and-openclaw-multi-agent-architectures-explained/): Why agents fail when they improvise, and how clear roles, limited permissions, and a chain of command make swarms work.
+- [The Coding Agent Arms Race: Which AI Actually Belongs in Your Terminal?](https://bryanchua.com/tech/2026/03/18/the-coding-agent-arms-race/): A practical take on Codex, Claude Code, Gemini CLI, Gemini Code Assist, and Jules — evaluated through the lens of reducing friction for teams.
+- [The Transcription Middleman Is Dead. Here's How It Changes RAG Forever.](https://bryanchua.com/tech/2026/03/13/the-transcription-middleman-is-dead/): The shift from text-as-universal-interface to omni-modal problem solving, and what it means for RAG architecture.
+- [Decoding DeepSeek: The Engineering Behind V3, R1, and Open-Source AI](https://bryanchua.com/tech/2025/06/05/decoding-deepseek-ai/): A CTO's deep dive into MoE, FP8 training, MLA, and how open-source AI is democratizing the market.
+
+## Leadership & Reflection
+
+- [Leadership, Family, and Focus After 2025 — What I Will Carry Forward](https://bryanchua.com/personal/2026/01/05/leadership-friendship-family-after-2025/): A technology leader's year-end reflection on measuring growth by rate of change and presence at home rather than vanity metrics.

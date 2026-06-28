@@ -146,7 +146,10 @@
       "headline": {{ page.title | jsonify }},
       "description": {{ page.description | default: page.excerpt | strip_html | jsonify }},
       "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-      "author": {
+      "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",
+      {% if page.image %}"image": "{{ page.image | absolute_url }}",
+      {% elsif images and images.size > 0 %}{% assign art_img = images[0] %}{% unless art_img contains '://' %}{% assign art_img = art_img | absolute_url %}{% endunless %}"image": "{{ art_img }}",
+      {% endif %}"author": {
         "@type": "Person",
         "name": "{{ site.author }}",
         "url": "{{ site.url }}"
@@ -156,6 +159,7 @@
         "name": "{{ site.author }}",
         "url": "{{ site.url }}"
       },
+      "mainEntityOfPage": "{{ page.url | absolute_url }}",
       "url": "{{ page.url | absolute_url }}"
     }{% unless forloop.last %},{% endunless %}
       {% endif %}
@@ -169,7 +173,10 @@
         { "@type": "Organization", "name": "GoPomelo" },
         { "@type": "Organization", "name": "Digital China Group" }
       ],
-      "alumniOf": { "@type": "Organization", "name": "ShopBack" }
+      "alumniOf": { "@type": "Organization", "name": "ShopBack" },
+      "sameAs": [
+        "https://github.com/ykbryan"
+      ]
     }{% unless forloop.last %},{% endunless %}
       {% endif %}
       {% if schema_type == "FAQPage" and page.faq %}

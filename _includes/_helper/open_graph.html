@@ -43,6 +43,11 @@
     {% endfor %}
   {% endif %}
 
+  {% comment %} Use a large-image Twitter card whenever the page has an image {% endcomment %}
+  {% if images.size != 0 %}
+    {% assign twitter_card = 'summary_large_image' %}
+  {% endif %}
+
   {% if description %}
     <meta name="description" content="{{ description }}">
     <!--newline-->
@@ -69,7 +74,8 @@
   {% endif %}
 
   {% for image in images %}
-    <meta property="og:image" content="{{ image }}">
+    {% if image contains '://' %}{% assign og_image = image %}{% else %}{% assign og_image = image | absolute_url %}{% endif %}
+    <meta property="og:image" content="{{ og_image }}">
     <!--newline-->
   {% endfor %}
 
@@ -87,7 +93,9 @@
   {% endif %}
 
   {% if images.size != 0 %}
-    <meta name="twitter:image" content="{{ images[0] }}">
+    {% assign tw_image = images[0] %}
+    {% unless tw_image contains '://' %}{% assign tw_image = tw_image | absolute_url %}{% endunless %}
+    <meta name="twitter:image" content="{{ tw_image }}">
     <!--newline-->
   {% endif %}
 
