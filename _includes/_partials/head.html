@@ -127,9 +127,25 @@
   };
 </script>
 
-{% comment %} Canonical, good for google search engine (SEO) : https://support.google.com/webmasters/answer/139066 {% endcomment %}
+{% comment %}
+  Canonical link. https://support.google.com/webmasters/answer/139066
+  This theme never assigns page.canonical_path, and absolute_url of that empty
+  value is the site root, so every page used to canonicalise to /.
+  Prefer an explicit canonical_url (syndication), then a legacy canonical_path,
+  otherwise this page's own permalink.
+{% endcomment %}
 {% if site.canonical %}
-  <link rel="canonical" href="{{ page.canonical_path | replace: 'index.html', '' | absolute_url }}"/>
+  {% if page.canonical_url %}
+    {% assign canonical_href = page.canonical_url %}
+    {% unless canonical_href contains '://' %}
+      {% assign canonical_href = canonical_href | strip_index | absolute_url %}
+    {% endunless %}
+  {% elsif page.canonical_path %}
+    {% assign canonical_href = page.canonical_path | strip_index | absolute_url %}
+  {% else %}
+    {% assign canonical_href = page.url | strip_index | absolute_url %}
+  {% endif %}
+  <link rel="canonical" href="{{ canonical_href }}"/>
 {% endif %}
 
 
