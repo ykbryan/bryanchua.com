@@ -141,5 +141,5 @@ Every layer in this stack is replaceable. The agent is just the one we expect to
 
 ---
 
-*Bryan Chua is CTO at [GoPomelo](https://www.gopomelo.com).*
+*I'm CTO at [GoPomelo](https://www.gopomelo.com/), where we build AI agents that carry a company's processes, decisions, and knowledge.*
 
