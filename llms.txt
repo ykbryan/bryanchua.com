@@ -16,6 +16,7 @@ Bryan Chua is CTO at GoPomelo and Digital China Group, and co-builder of Routero
 
 ## AI Agents & Engineering
 
+- [Inside Our AI Agents with GoPomelo Brain](https://bryanchua.com/tech/2026/10/09/inside-our-ai-agents-with-gopomelo-brain/): Building an agent is easy; handing it the company is not. How GoPomelo Brain, Routero AI, and Agent Tower split what an agent knows, what it costs, and what it is allowed to do.
 - [How I Built an AI Agent Content Pipeline — And What Actually Broke](https://bryanchua.com/tech/2026/03/25/building-a-team-of-ai-agents/): Running a six-agent content pipeline (the Octonauts) from brief to published post — what worked, what broke, and the limits of AI content automation.
 - [Why I Built Mission Control for Agent Swarms](https://bryanchua.com/tech/2026/03/23/why-i-built-mission-control-for-agent-swarms/): The hardest part of AI agents isn't prompting — it's observability. Lessons from building multi-agent workflows with Gemini, Codex, and Claude Code.
 - [Mastering Agent Swarms: Multi-Model Integration and OpenClaw Multi-Agent Architectures Explained](https://bryanchua.com/tech/2026/03/20/mastering-agent-swarms-multi-model-integration-and-openclaw-multi-agent-architectures-explained/): Why agents fail when they improvise, and how clear roles, limited permissions, and a chain of command make swarms work.
